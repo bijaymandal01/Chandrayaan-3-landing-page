@@ -42,6 +42,7 @@ html,body{
     font-size: 15px;
     border-radius: 1.5vw;
     padding:0.1vw;
+    margin: 2px;
     background-color:black;
     color: white;
 }
@@ -54,6 +55,7 @@ html,body{
     width: 100%;
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .left{
@@ -61,6 +63,7 @@ html,body{
     width: 50%;
     background-color:black;
     position: relative;
+    flex: 50%;
 }
 .left h1{
     font-size: 4vw;
@@ -87,6 +90,7 @@ html,body{
 .left img{
     width: 100%;
     padding: 0vw 5vw;
+
 }
 
 .right{
@@ -94,6 +98,7 @@ html,body{
     height: 100%;
     background-color:black;
     position: relative;
+    flex: 50%;
 }
 .right img{
     width: 100%;
@@ -132,7 +137,7 @@ html,body{
 }
 .content2:hover{
     background-color:black;
-    color: white;
+    color:red;
 }
 
 
@@ -143,7 +148,7 @@ html,body{
 
 }
 .content2 h1::selection{
-    color: red;
+    color: white;
 
 }
 
@@ -181,4 +186,10 @@ html,body{
     }
 
 }
+@media (min-width:320){
+    .left{
+        flex: 100%;
 
+
+    }
+}
